@@ -42,10 +42,9 @@ Node *sort(Node **head, int (*compare)(int x, int y))
 }
 
 /**
- * swap - Function that swaps either nodes or data of nodes of a linked list
+ * swap - swaps data of nodes
  * @node1: The first node of the list
  * @node2: The second node of the list
- * @MODE: change the mode of swapping either swap data or node
  * 
  * Return: Nothing
 */
