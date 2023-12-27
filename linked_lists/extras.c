@@ -100,5 +100,5 @@ void _free(void **ptr)
  */
 int compare(int x, int y)
 {
-	return (x < y);
+	return (x <= y);
 }
