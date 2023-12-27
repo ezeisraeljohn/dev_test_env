@@ -4,6 +4,10 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <assert.h>
+#include <stddef.h>
+
+#define NODE 1
+#define DATA 2
 
 /**
  * struct Node - a blueprint for a node
@@ -32,12 +36,14 @@ void _free(void **ptr);
 #define safe_free(p) _free((void **) &(p))
 
 /* functions for you to write */
-
 /* this sort function must use the 'compare()' function */
 Node *sort(Node **head, int (*compare)(int x, int y));
 
 /* you will have to use to linked lists you have sorted to complete it */
 Node *merge(Node *list_1, Node *list2);
+
+/*Swap nodes or data of a list*/
+void swap(Node *node1, Node *node2);
 
 
 #endif /* NODE_H */
